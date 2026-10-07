@@ -3,6 +3,8 @@ import { redirect } from "next/navigation";
 import { verifyToken } from "@/lib/auth";
 import UsersTable from "./users-table";
 
+export const instant = false;
+
 export default async function DashboardPage() {
   const cookieStore = await cookies();
 
